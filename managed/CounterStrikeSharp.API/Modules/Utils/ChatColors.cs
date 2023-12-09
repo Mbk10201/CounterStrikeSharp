@@ -39,4 +39,72 @@ public class ChatColors
     public static char Magenta = '\x0E';
     public static char LightRed = '\x0F';
     public static char Orange = '\x10';
+
+    public static string Filter( string buffer )
+    {    
+        if (buffer.Contains("{white}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{white}", ChatColors.White.ToString());
+    
+        if (buffer.Contains("{default}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{default}", ChatColors.White.ToString());
+    
+        if (buffer.Contains("{darkred}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{darkred}", ChatColors.Darkred.ToString());
+    
+        if (buffer.Contains("{green}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{green}", ChatColors.Green.ToString());
+    
+        if (buffer.Contains("{lightyellow}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{lightyellow}", ChatColors.LightYellow.ToString());
+    
+        if (buffer.Contains("{lightblue}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{lightblue}", ChatColors.LightBlue.ToString());
+    
+        if (buffer.Contains("{olive}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{olive}", ChatColors.Olive.ToString());
+    
+        if (buffer.Contains("{lime}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{lime}", ChatColors.Lime.ToString());
+    
+        if (buffer.Contains("{red}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{red}", ChatColors.Red.ToString());
+    
+        if (buffer.Contains("{lightpurple}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{lightpurple}", ChatColors.LightPurple.ToString());
+    
+        if (buffer.Contains("{purple}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{purple}", ChatColors.Purple.ToString());
+    
+        if (buffer.Contains("{grey}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{grey}", ChatColors.Grey.ToString());
+    
+        if (buffer.Contains("{yellow}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{yellow}", ChatColors.Yellow.ToString());
+    
+        if (buffer.Contains("{gold}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{gold}", ChatColors.Gold.ToString());
+    
+        if (buffer.Contains("{silver}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{silver}", ChatColors.Silver.ToString());
+    
+        if (buffer.Contains("{blue}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{blue}", ChatColors.Blue.ToString());
+    
+        if (buffer.Contains("{darkblue}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{darkblue}", ChatColors.DarkBlue.ToString());
+    
+        if (buffer.Contains("{bluegrey}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{bluegrey}", ChatColors.BlueGrey.ToString());
+    
+        if (buffer.Contains("{magenta}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{magenta}", ChatColors.Magenta.ToString());
+    
+        if (buffer.Contains("{lightred}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{lightred}", ChatColors.LightRed.ToString());
+    
+        if (buffer.Contains("{orange}", StringComparison.OrdinalIgnoreCase))
+            buffer = buffer.Replace("{orange}", ChatColors.Orange.ToString());
+    
+        return buffer;
+    }
 }
